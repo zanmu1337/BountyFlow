@@ -83,8 +83,7 @@ def main():
     if urls:
         print(f"[*] Running S3 scan on {len(urls)} URLs")
         run_s3_scan(str(results_file), str(output_dir / 's3_results.txt'))
-    
-    # Final: write only URLs to single file
+
     print(f"[+] Results saved to {results_file}")
 
 if __name__ == "__main__":
